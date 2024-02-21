@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "helpdialog.h"
+#include "connectiondialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,12 +17,10 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pb_ok_clicked();
-
-    void on_pb_help_clicked();
+    void on_pb_connection_menu_clicked();
 
 private:
     Ui::MainWindow *ui;
-    HelpDialog* help_dialog;
+    ConnectionDialog* connection_dialog;
 };
 #endif // MAINWINDOW_H

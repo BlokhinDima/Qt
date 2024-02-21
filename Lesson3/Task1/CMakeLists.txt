@@ -17,9 +17,9 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        helpdialog.cpp
-        helpdialog.h
-        helpdialog.ui
+        connectiondialog.cpp
+        connectiondialog.h
+        connectiondialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
