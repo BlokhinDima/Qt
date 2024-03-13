@@ -6,7 +6,6 @@
 #include <QtConcurrent>
 #include <QSqlQueryModel>
 #include "database.h"
-#include "dbdata.h"
 #include "connectiondialog.h"
 
 
