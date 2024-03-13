@@ -15,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
      * QObject, поэтому воспользуемся иерархией.
     */
 
-    dataDb = new DbData(this);
+    connetion_dialog = new ConnectionDialog(this);
     dataBase = new DataBase(this);
     msg = new QMessageBox(this);
 
@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
      * Устанавливаем данные для подключениея к БД.
      * Поскольку метод небольшой используем лямбда-функцию.
      */
-    connect(dataDb, &DbData::sig_sendData, this, [&](QVector<QString> receivData){
+    connect(connetion_dialog, &ConnectionDialog::sig_sendData, this, [&](QVector<QString> receivData){
         dataForConnect = receivData;
     });
 
@@ -61,7 +61,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_act_addData_triggered()
 {
     //Отобразим диалоговое окно. Какой метод нужно использовать?
-    dataDb->show();
+    connetion_dialog->show();
 }
 
 

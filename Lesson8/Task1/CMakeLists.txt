@@ -19,9 +19,9 @@ set(PROJECT_SOURCES
         mainwindow.ui
         database.h
         database.cpp
-        dbdata.h
-        dbdata.cpp
-        dbdata.ui
+        connectiondialog.cpp
+        connectiondialog.h
+        connectiondialog.ui
 )
 
 add_executable(Task1

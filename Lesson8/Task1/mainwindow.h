@@ -7,6 +7,7 @@
 #include <QSqlQueryModel>
 #include "database.h"
 #include "dbdata.h"
+#include "connectiondialog.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -41,7 +42,7 @@ private:
     QVector<QString> dataForConnect; //Данные для подключения к БД.
 
     Ui::MainWindow *ui;
-    DbData *dataDb;
+    ConnectionDialog *connetion_dialog;
     DataBase* dataBase;
     QMessageBox* msg;
 
